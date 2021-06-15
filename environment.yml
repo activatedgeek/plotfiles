@@ -1,0 +1,17 @@
+name: plotfiles
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - pip
+  - pip:
+    - jupyterlab
+    - ipywidgets
+    - tqdm
+    - seaborn
+    - numpy
+    - scipy
+    - pandas
+    - torch
+    - scikit-learn
+    - wandb
