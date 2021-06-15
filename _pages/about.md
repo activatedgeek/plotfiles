@@ -1,11 +1,12 @@
 ---
 layout: page
-title: About Me
+title: About
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+Like dotfiles, but for plotting, by [Sanyam Kapoor](https://im.perhapsbay.es).
 
+This is a personal repository of ready-to-use graphs to avoid scrambling through
+bad patterns.
 
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+_powered by [fastpages](https://github.com/fastai/fastpages)_
