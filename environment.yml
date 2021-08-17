@@ -12,6 +12,4 @@ dependencies:
     - numpy
     - scipy
     - pandas
-    - torch
-    - scikit-learn
-    - wandb
+    - tmdbsimple

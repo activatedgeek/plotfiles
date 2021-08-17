@@ -18,6 +18,8 @@ _powered by [fastpages](https://github.com/fastai/fastpages)_
 
 [Choosing color palettes](https://seaborn.pydata.org/tutorial/color_palettes.html)
 
+[Scientific Visualization – Python & Matplotlib](https://github.com/rougier/scientific-visualization-book) by Nicolas P. Rougier
+
 ## License
 
 Apache 2.0
