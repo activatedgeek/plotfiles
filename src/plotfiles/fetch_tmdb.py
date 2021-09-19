@@ -20,8 +20,8 @@ def fetch_tv(id, rating):
   return tv_info
 
 
-def main(ratings_path=None):
-  ratings = pd.read_csv(ratings_path)
+def main(data_path: Path, ratings_path: str = 'ratings.csv'):
+  ratings = pd.read_csv(data_path / ratings_path)
   ratings = ratings.rename(columns={ 'TMDb ID': 'id', 'Your Rating': 'rating', 'Type': 'type' })
   ratings = ratings[['id', 'type', 'rating']].values.tolist()
 
@@ -34,8 +34,6 @@ def main(ratings_path=None):
     else:
       raise NotImplementedError
 
-  data_path = Path(os.path.dirname(__file__)).parent.parent / 'data'
-
   with open(data_path / 'movies.json', 'w') as f:
     json.dump(movie_details, f, indent=2)
 
@@ -46,4 +44,4 @@ def main(ratings_path=None):
 
 
 if __name__ == '__main__':
-  main(ratings_path='ratings.csv')
+  main(data_path=(Path(os.path.dirname(__file__)).parent.parent / 'data'))
